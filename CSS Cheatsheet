@@ -1,0 +1,11 @@
+CSS Cheatsheet
+
+Static - sticks in the flow
+Relative - sits in the flow, but can be offset from it's position in the flow.
+
+Absolute - unless position is stated, it gets removed from the flow and ignores the flow completely, rendering the object over top (so long as z-index is not specified)
+
+the quick brown <span style={{absolute}}>fox</span> jumps over the lazy dog
+	- In this case, "the quick brown" would start the normal flow, and "fox" would ignore everything thereafter and JUST appear.
+
+	i.e. "fox" would reside on top of "jumps"
