@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 //import {Button, Card, ComboBox, Select, Option, Placeholder, Separator, Rating, TextInput, Toggle, Choice} from 'belle';
+console.log("got to the import statement");
 import PractitionerAvatar from './PractitionerComponents/PractitionerAvatar'
 import PracticeHeader from "./PracticeComponents/PracticeHeader";
 import Practice from "./PracticeComponents/Practice";

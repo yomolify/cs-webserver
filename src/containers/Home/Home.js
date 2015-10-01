@@ -7,34 +7,65 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 import Sticky from "react-sticky";
 import SimpleMapPage from '../../components/Map/SimpleMapPage'
 
-
-
 export default class Home extends Component {
   render() {
     const styles = require('./Home.scss');
     // require the logo image both from client and server
-    const logoImage = require('./logo.png');
+    const logoImage = require('../../../static/cclogo_big.png');
     return (
       <div className={styles.home}>
-          <div style = {{
-            position: "absolute",
-            right:"0px",
-            top: "60px",
-            width: "100%",
-            height: "40px",
-            zIndex: "2",
-            background:"white"}}>
-              <SearchBar/>
+        <div className={styles.masthead}>
+          <div className="container">
+            <div className={styles.logo}>
+              <p>
+                <img src={logoImage}/>
+              </p>
+            </div>
           </div>
-        <div style={{backgroundColor:"#E8E8E8", width:"40%", top:"50px", position:"relative", float:"left"}}>
-          <AppointmentViewer />
-        </div>
-        <div id="map" style={{width:"60%", position:"relative", height:"1000px", float:"left"}}>
-          <SimpleMapPage/>
+          <div style={{width:"42%", backgroundColor:"#B2EBF2"}}>
+           <div style={{width:"100%", padding:"10px", float:"center"}}>
+              <AppointmentViewer />
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 }
 
-
+// export default class Home extends Component {
+//   render() {
+//     const styles = require('./Home.scss');
+//     // require the logo image both from client and server
+//     const logoImage = require('../../../static/cclogo_big.png');
+//     return (
+//       <div>
+//         <div>
+//           <div>
+//             <div className={styles.logo}>
+//               <p>
+//                 <img src={logoImage}/>
+//               </p>
+//             </div>
+//             <div style = {{
+//               position: "absolute",
+//               right:"0px",
+//               top: "60px",
+//               width: "100%",
+//               height: "40px",
+//               zIndex: "2",
+//               background:"white"}}>
+//                 <SearchBar/>
+//             </div>
+//             <div style={{backgroundColor:"#0097A7", width:"40%"}}>
+//               <AppointmentViewer />
+//             </div>
+//             <div id="map" style={{width:"60%"}}>
+//               <SimpleMapPage/>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     );
+//   }
+// }

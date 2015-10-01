@@ -32,23 +32,16 @@ export default class Appointment extends Component {
     this.props.initialize('survey', {});
   }
 
-  handleInitialize() {
-    this.props.initialize('appointmentForm', {
-      patientName: 'Full name',
-      patientEmail: 'me@example.com',
-      patientPhoneNumber: '(XXX) XXX-XXXX',
-      patientPostalCode: 'X1X 1X1'
-    });
-  }
-
   render() {
     return (
-        <div style={{textAlign: 'center', margin: 15}}>
-          <button className="btn btn-primary" onClick={::this.handleInitialize}>
-            <i className="fa fa-pencil"/> Initialize Form
-          </button>
+        <div style={{width:"100%", height:"100X"}}>
         <AppointmentForm onSubmit={::this.handleSubmit}/>
       </div>
     );
   }
 }
+          // If the user desires a button to intialize hint text in the form.
+          // <button className="btn btn-primary" onClick={::this.handleInitialize}>
+          //   <i className="fa fa-pencil"/> Initialize Form
+          // </button>
+

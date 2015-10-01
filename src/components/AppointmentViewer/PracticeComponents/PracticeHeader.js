@@ -13,10 +13,10 @@ export default class PracticeHeader extends Component {
 		}
 
 		var headerTitleStyle = {
-			color: "#009999",
-			fontFamily: "Helvetica, Roboto, Arial, sans-serif",
+			color: "#00ACC1",
+			fontFamily: "Roboto, Arial, sans-serif",
 			fontSize: "27px",
-			fontStyle: "bold		",
+			fontStyle: "bold",
 			fontWeight: "200",
 			textAlign: "left",
 			lineHeight: "70%",
@@ -26,7 +26,7 @@ export default class PracticeHeader extends Component {
 
 		var headerTextStyle = {
 			color: "rgb(51, 76, 76)",
-			fontFamily: "Helvetica, Roboto, Arial, sans-serif",
+			fontFamily: "Roboto, Arial, sans-serif",
 			fontSize: "14px",
 			fontStyle: "normal",
 			fontWeight: "400",

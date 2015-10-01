@@ -7,43 +7,47 @@ import DocumentMeta from 'react-document-meta';
 import {isLoaded as isAuthLoaded, load as loadAuth} from 'redux/modules/auth';
 import { Link } from 'react-router';
 import moment from 'moment';
+import {ButtonGroup, Button} from 'elemental';
+
 
 @connectReduxForm({
   form: 'appointmentForm',
-  fields: ['patientName', 'patientEmail', 'patientPhoneNumber', 'patientPostalCode']
+  fields: ['patientName', 'patientEmail', 'patientPhoneNumber', 'patientPostalCode', 'patientGender']
   // state => ({user: state.auth.user, token: state.auth.token}),
   // dispatch => bindActionCreators(bookActions, dispatch)
 })
 export default
 class AppointmentForm extends Component {
-  static propTypes = {
-    // No sure if required.
-    book: PropTypes.func,
-  }
 
   render() {
     console.log("let's try and make an appointment form");
     const{
-      fields: {patientName, patientEmail, patientPhoneNumber, patientPostalCode},
+      fields: {patientName, patientEmail, patientPhoneNumber, patientPostalCode, patientGender},
       handleSubmit,
       handleChange
       } = this.props;
     const styles = require('./AppointmentForm.scss');
 
     const renderInput = (field, label) =>
-         <div>
-            <input type="text" className="form-control" id={field.name} {...field}/>
+         <div style={{padding:"10px"}}>
+            <label>{label}</label><input type="text" className="form-control" id={field.name} {...field}/>
         </div>;
 
+    // TODO Button group for [FEMALE]
+    // const button = (field, label) =>
+    //   <div>
+    //     <ButtonGroup>
+    //       <Button type="default"{}
+
     return (
-      
+
       <form className="form-horizontal" onSubmit={handleSubmit}>
         {renderInput(patientName, 'Full Name')}
         {renderInput(patientEmail, 'Email')}
         {renderInput(patientPhoneNumber, 'Phone number')}
         {renderInput(patientPostalCode, 'Postal code')}
          <div className="form-group">
-            <div className="col-sm-offset-2 col-sm-10">
+            <div style={{align:"left", padding:"25px"}}>
               <button className="btn btn-success" onClick={handleSubmit}>
                 <i className="fa fa-paper-plane"/> Submit
               </button>

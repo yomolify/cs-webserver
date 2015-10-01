@@ -15,7 +15,7 @@ export default class  extends Component {
 			cursor:"auto",
 			display:"block",
 			float:"left",
-			fontFamily:"Helvetica, Roboto, Arial, sans-serif",
+			fontFamily:"Roboto, Arial, sans-serif",
 			fontSize:"16px",
 			fontStyle:"normal",
 			fontWeight:"200",
@@ -40,9 +40,13 @@ export default class  extends Component {
 				console.log("it wasn't tomorrow");
 				firstAvailableDate = this.props.availability;
 		return (
-			<div>
-				<ShowAdditionalTimesButton />
-				<FirstAvailableButton firstAvailableDate={firstAvailableDate}/>
+			<div style={{width:"100%"}}>
+				<div style={{align:"left", width:"50%"}}>
+					<ShowAdditionalTimesButton />
+				</div>
+				<div style={{align:"left", width:"50%"}}>
+					<FirstAvailableButton firstAvailableDate={firstAvailableDate}/>
+				</div>
 			</div>
 		);
 	}

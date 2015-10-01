@@ -162,6 +162,7 @@
     "redux-devtools": "^2.1.2",
     "sass-loader": "^2.0.0",
     "simple-react-modal": "^0.4.7",
+    "snapsvg": "^0.4.0",
     "strip-loader": "^0.1.0",
     "style-loader": "^0.12.3",
     "webpack": "^1.9.11",

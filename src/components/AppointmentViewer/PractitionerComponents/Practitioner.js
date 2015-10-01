@@ -13,13 +13,26 @@ export default class Practitioner extends Component {
 		var availability = this.props.practitioner.Availability;
 		//var specializations = this.props.practitioner.Specializations;
 
+		//				<PractitionerAvatar/>
+		var divStyle = {
+			overflow:"hidden",
+			WebkitFlex:"1",
+			flex:"1",
+		}
 
-
+		var cardStyle = {
+			display:"WebkitFlex",
+			WebkitJustifyContent:"center",
+			justifyContent:"center",
+		}
 		return (
-			<Card>
-				<PractitionerAvatar/>
-				<PractitionerInfo name={name}/>
-				<Availability availability={availability} />
+			<Card style={cardStyle}>
+				<div style={divStyle}>
+					<PractitionerInfo name={name}/>
+				</div>
+				<div style={divStyle}>
+					<Availability availability={availability} />
+				</div>
 			</Card>
 		);
 	}
