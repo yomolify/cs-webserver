@@ -1,8 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 export default class PracticeHeader extends Component {
 	render() {
-		var divStyle ={
+		const divStyle = {
+
 			boxSizing:'border-box',
 			display:'block',
 			paddingBottom: '10px',
@@ -10,9 +11,10 @@ export default class PracticeHeader extends Component {
 			paddingRight: '5px',
 			paddingTop: '5px',
 			overflow: 'hidden'
-		}
+		};
 
-		var headerTitleStyle = {
+		const headerTitleStyle = {
+
 			color: '#00ACC1',
 			fontFamily: 'Roboto, Arial, sans-serif',
 			fontSize: '27px',
@@ -22,9 +24,10 @@ export default class PracticeHeader extends Component {
 			lineHeight: '70%',
 			display:'block'
 
-		}
+		};
 
-		var headerTextStyle = {
+		const headerTextStyle = {
+
 			color: 'rgb(51, 76, 76)',
 			fontFamily: 'Roboto, Arial, sans-serif',
 			fontSize: '14px',
@@ -33,7 +36,7 @@ export default class PracticeHeader extends Component {
 			textAlign: 'left',
 			lineHeight: 'normal',
 			display: 'block'
-		}
+		};
 		var name = this.props.name;
 		var address = this.props.address;
 		return (

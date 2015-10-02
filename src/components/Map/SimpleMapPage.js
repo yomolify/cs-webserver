@@ -1,17 +1,11 @@
 import React, {PropTypes, Component} from 'react/addons';
-import { canUseDOM } from 'react/lib/ExecutionEnvironment';
 import controllable from 'react-controllables';
 import shouldPureComponentUpdate from 'react-pure-render/function';
-
-
-
 import {List} from 'immutable';
-
 const K_MARGIN_TOP = 30;
 const K_MARGIN_RIGHT = 30;
 const K_MARGIN_BOTTOM = 30;
 const K_MARGIN_LEFT = 30;
-
 const K_HOVER_DISTANCE = 30;
 
 @controllable(['center', 'zoom', 'markers'])
@@ -41,11 +35,11 @@ export default class SimpleMapPage extends Component {
     apiKey: 'AIzaSyDH8q0leo3eqNenuB5o2cL_m7G7D4o5N5M'
   }
 
-  shouldComponentUpdate = shouldPureComponentUpdate;
-
   constructor(props) {
     super(props);
   }
+
+  shouldComponentUpdate = shouldPureComponentUpdate;
 
   _onBoundsChange = (center, zoom, bounds, marginBounds) => {
     if (this.props.onBoundsChange) {

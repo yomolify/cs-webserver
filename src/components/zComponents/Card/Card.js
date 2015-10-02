@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import Radium from 'radium';
 
 @Radium
@@ -17,7 +17,7 @@ export default class Card extends Component {
         width: '500px',
         boxShadow: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
 
-        ':hover' : {
+        ':hover': {
           boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)',
           },
         },

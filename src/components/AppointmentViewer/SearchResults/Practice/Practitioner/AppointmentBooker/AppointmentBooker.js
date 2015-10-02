@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import DocumentMeta from 'react-document-meta';
+// import DocumentMeta from 'react-document-meta';
 import {initialize} from 'redux-form';
 import AppointmentForm from './AppointmentForm/AppointmentForm';
 
@@ -33,7 +33,7 @@ export default class AppointmentBooker extends Component {
 
   render() {
     return (
-        <div style={{width:"100%", height:"100X"}}>
+        <div style={{width: '100%', height: '100X'}}>
         <AppointmentForm onSubmit={::this.handleSubmit}/>
       </div>
     );
