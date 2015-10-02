@@ -1,15 +1,9 @@
 import React, {Component, PropTypes} from 'react';
 //import {Button, Card, ComboBox, Select, Option, Placeholder, Separator, Rating, TextInput, Toggle, Choice} from 'belle';
-console.log("got to the import statement");
-import PractitionerAvatar from './PractitionerComponents/PractitionerAvatar'
-import PracticeHeader from "./PracticeComponents/PracticeHeader";
-import Practice from "./PracticeComponents/Practice";
-import SearchResults from "./SearchResults";
-import PractitionerInfo from "./PractitionerComponents/PractitionerInfo"
-import FirstAvailableButton from "./PractitionerComponents/FirstAvailableButton"
-import Availability from "./PractitionerComponents/Availability";
- import SearchBar from "../SearchBar/SearchBar";
-// import AppointmentDateTimePicker from "../SearchBar/AppointmentDateTimePicker";
+console.log('got to the import statement');
+import SearchResults from './SearchResults/SearchResults';
+import Card from '../zComponents/Card/Card';
+// import AppointmentDateTimePicker from '../SearchBar/AppointmentDateTimePicker';
 // Somewhere we have to deal with the data inflows.
 // This should probably appear here for now.
 

@@ -1,11 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import DocumentMeta from 'react-document-meta';
 import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
 import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
-import { InfoBar } from 'components';
 import { createTransitionHook } from 'helpers/universalRouter';
 
 const title = 'CareCru';
@@ -88,32 +86,15 @@ export default class App extends Component {
   }
 
   render() {
-    const {user} = this.props;
     const styles = require('./App.scss');
     return (
       <div className={styles.app}>
         <DocumentMeta {...meta}/>
         <nav className="navbar navbar-default navbar-fixed-top">
           <div className="container">
-            <Link to="/" className="navbar-brand">
-              <div className={styles.brand}/>
-              CareCru
-            </Link>
-
-            <ul className="nav navbar-nav">
-              <li><Link to="/scheduler">Scheduler</Link></li>
-            </ul>
-            {user &&
-            <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="https://github.com/erikras/react-redux-universal-hot-example"
-                   target="_blank" title="View on Github"><i className="fa fa-github"/></a>
-              </li>
-            </ul>
           </div>
         </nav>
-        <div className={styles.appContent}>
+        <div>
           {this.props.children}
         </div>
       </div>

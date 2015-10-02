@@ -6,5 +6,4 @@
  */
 
 export SimpleMapPage from './Map/SimpleMapPage';
-export SurveyForm from './SurveyForm/SurveyForm';
 export AppointmentViewer from './AppointmentViewer/AppointmentViewer';

@@ -22,8 +22,7 @@ body {
   nav :global(.fa) {
     font-size: 2em;
     line-height: 20px;
+    fontFamily: "Roboto, Arial, sans-serif"
   }
 }
-.appContent {
-  margin: 50px; // for fixed navbar
-}
+

@@ -1,6 +1,6 @@
 {
   "javascript": {
-    "main": "http://localhost:3001/dist/main-46ba6941812fb2042ea4.js"
+    "main": "http://localhost:3001/dist/main-c904dfed3e530a6da575.js"
   },
   "styles": {},
   "images": {
@@ -8,28 +8,18 @@
     "./static/cclogo_big.png": "http://localhost:3001/dist/547632a70477d23c2adf993a591a76e0.png"
   },
   "style_modules": {
-    "./src/components/SurveyForm/SurveyForm.scss": {
-      "inputGroup": "inputGroup___2TvEi",
-      "flags": "flags___C-VuX",
-      "active": "active___2RAG1",
-      "dirty": "dirty___1ZXcm",
-      "visited": "visited___1YzZB",
-      "touched": "touched___2F-qH",
-      "cog": "cog___xN0Fc"
-    },
-    "./src/components/AppointmentViewer/Modal/AppointmentForm.scss": {
-      "inputGroup": "inputGroup___2IdYI",
-      "flags": "flags___3DESe",
-      "active": "active___3Vglo",
-      "dirty": "dirty___EKeoX",
-      "visited": "visited___1MfMu",
-      "touched": "touched___1K1cT",
-      "cog": "cog___2OVUE"
-    },
     "./src/containers/App/App.scss": {
       "app": "app___2LF5i",
-      "brand": "brand___20_t0",
-      "appContent": "appContent___3kCD5"
+      "brand": "brand___20_t0"
+    },
+    "./src/components/AppointmentViewer/SearchResults/Practice/Practitioner/AppointmentBooker/AppointmentForm/AppointmentForm.scss": {
+      "inputGroup": "inputGroup___3yXCM",
+      "flags": "flags___L32Zm",
+      "active": "active___2rwrz",
+      "dirty": "dirty___O59XL",
+      "visited": "visited___3-QTQ",
+      "touched": "touched___1At1u",
+      "cog": "cog___BAnCJ"
     },
     "./src/containers/Home/Home.scss": {
       "home": "home___3kGik",
@@ -37,7 +27,6 @@
       "logo": "logo___2M5M4",
       "humility": "humility___Tra-R",
       "github": "github___1UyUK"
-    },
-    ".s": {}
+    }
   }
 }

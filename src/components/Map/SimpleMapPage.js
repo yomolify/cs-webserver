@@ -38,7 +38,7 @@ export default class SimpleMapPage extends Component {
     visibleRowFirst: -1,
     visibleRowLast: -1,
     hoveredRowIndex: -1,
-    apiKey: "AIzaSyDH8q0leo3eqNenuB5o2cL_m7G7D4o5N5M"
+    apiKey: 'AIzaSyDH8q0leo3eqNenuB5o2cL_m7G7D4o5N5M'
   }
 
   shouldComponentUpdate = shouldPureComponentUpdate;
@@ -88,7 +88,7 @@ export default class SimpleMapPage extends Component {
   render() {
       const GoogleMap = require('google-map-react');
       return (
-        <div style={{width:"100%", height:"1500px"}}>
+        <div style={{width:'100%', height:'1500px'}}>
           <GoogleMap
             apiKey={this.props.apiKey}
             center={this.props.center.toJS()}

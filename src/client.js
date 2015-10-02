@@ -11,7 +11,6 @@ import ApiClient from './helpers/ApiClient';
 import universalRouter from './helpers/universalRouter';
 const history = new BrowserHistory();
 const client = new ApiClient();
-import '../node_modules/elemental/less/elemental.less';
 // import '../node_modules/elemental/less/base.less';
 
 
