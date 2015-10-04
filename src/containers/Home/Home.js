@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppointmentViewer from '../../components/AppointmentViewer/AppointmentViewer';
-import Card from '../../components/zComponents/Card/Card';
+// import Card from '../../components/zComponents/Card/Card';
+// import CardHeader from '../../components/zComponents/Card/CardHeader';
 import Radium from 'radium';
 
 @Radium
@@ -13,11 +14,6 @@ export default class Home extends Component {
       <div className={styles.home}>
           <div style={{width: '42%', backgroundColor: '#B2EBF2'}}>
               <AppointmentViewer />
-          </div>
-          <div>
-            <Card>
-            <p>test</p>
-            </Card>
           </div>
       </div>
     );

@@ -86,18 +86,11 @@ export default class App extends Component {
   }
 
   render() {
-    const styles = require('./App.scss');
+   // const styles = require('./App.scss');
     return (
-      <div className={styles.app}>
-        <DocumentMeta {...meta}/>
-        <nav className="navbar navbar-default navbar-fixed-top">
-          <div className="container">
-          </div>
-        </nav>
         <div>
           {this.props.children}
         </div>
-      </div>
     );
   }
 }
