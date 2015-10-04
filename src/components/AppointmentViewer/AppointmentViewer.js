@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 console.log('got to the import statement');
 import SearchResults from './SearchResults/SearchResults';
+import ModalButton from '../zComponents/ModalButton/ModalButton';
 // import Card from '../zComponents/Card/Card';
 // import AppointmentDateTimePicker from '../SearchBar/AppointmentDateTimePicker';
 // Somewhere we have to deal with the data inflows.
@@ -18,6 +19,7 @@ export default class AppointmentViewer extends Component {
 		return (
 			<div>
 				<SearchResults />
+				<ModalButton />
 			</div>
 		);
 	}
